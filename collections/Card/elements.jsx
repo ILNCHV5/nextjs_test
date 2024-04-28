@@ -9,9 +9,15 @@ export const CardContainer = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  width: 22rem;
+  width: 23rem;
   max-height: 7rem;
   padding: 1.5rem;
+  border: 3px solid transparent;
+  transition: border-color 0.3s;
+  &:hover {
+    border-color: #67a5f7;
+    cursor: pointer;
+  }
 `;
 
 export const TextContainer = styled.div`

@@ -7,12 +7,21 @@ export const SectionContainer = styled.div`
   justify-content: center;
   padding-top: 3rem;
   padding-bottom: 3rem;
+  width: 100vw;
+  background-image: url("/background.png");
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (max-width: 1024px) {
+    background-size: 100%;
+  }
 `;
 
 export const HeadingContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   padding: 1rem;
   padding-bottom: 3rem;
@@ -22,12 +31,14 @@ export const PageTitle = styled.p`
   font-family: Helvetica Neue, sans-serif;
   font-weight: bold;
   font-size: 2.2rem;
+  text-align: center;
   margin: 0;
 `;
 
 export const PageSubTitle = styled.p`
   font-family: Helvetica Neue, sans-serif;
   font-size: 1.2rem;
+  text-align: center;
   margin: 0;
 `;
 
@@ -37,6 +48,10 @@ export const ContentsContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   column-gap: 4rem;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
 `;
 
 export const CardsContainer = styled.div`
