@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import {
   StyledTextContainer,
@@ -17,11 +18,19 @@ export const Hero = ({ image, title, description, ctaText, ...props }) => {
         <StyledTitle>{title}</StyledTitle>
         <StyledDescription>{description}</StyledDescription>
         <StyledCTAContainer>
-          <StyledGetStartedBtn>{ctaText}</StyledGetStartedBtn>
+          <Link href="/agency-selection">
+            <StyledGetStartedBtn>{ctaText}</StyledGetStartedBtn>
+          </Link>
         </StyledCTAContainer>
       </StyledTextContainer>
       <StyledImageContainer>
-        <Image layout="responsive" src={image.src} alt={image.alt} width={image.width} height={image.height} />
+        <Image
+          layout="responsive"
+          src={image.src}
+          alt={image.alt}
+          width={image.width}
+          height={image.height}
+        />
       </StyledImageContainer>
     </StyledContainer>
   );
