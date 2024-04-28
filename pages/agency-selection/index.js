@@ -6,8 +6,8 @@ const agencySelectionProps = {
   video: {
     src: "/video.png",
     alt: "video sim",
-    width: "18rem",
-    height: "29rem",
+    width: 288,
+    height: 464,
   },
   cards: [
     {

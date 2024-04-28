@@ -15,8 +15,8 @@ export const Card = ({ image, title, body }) => {
           layout="responsive"
           src={image.src}
           alt={image.alt}
-          width="100%"
-          height="100%"
+          width={48}
+          height={48}
         />
       </StyledImageContainer>
       <TextContainer>
