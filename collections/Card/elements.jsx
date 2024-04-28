@@ -9,8 +9,9 @@ export const CardContainer = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  width: 25rem;
-  padding: 1rem;
+  width: 22rem;
+  max-height: 7rem;
+  padding: 1.5rem;
 `;
 
 export const TextContainer = styled.div`
@@ -23,11 +24,13 @@ export const CardTitleText = styled.p`
   font-family: Helvetica Neue, sans-serif;
   font-weight: bold;
   font-size: 1rem;
+  margin: 0;
 `;
 
 export const CardBodyText = styled.p`
   font-family: Helvetica Neue, sans-serif;
   font-size: 0.9rem;
+  margin: 0;
 `;
 
 export const StyledImageContainer = styled(({ ...props }) => (
