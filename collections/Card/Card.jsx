@@ -1,19 +1,27 @@
-import image from "next/image";
+import Image from "next/image";
 import {
   CardContainer,
   TextContainer,
   CardTitleText,
   CardBodyText,
-  ImageContainer,
+  StyledImageContainer,
 } from "./elements";
 
-export const Card = ({ image }) => {
+export const Card = ({ image, title, body }) => {
   return (
     <CardContainer>
-      <ImageContainer></ImageContainer>
+      <StyledImageContainer>
+        <Image
+          layout="responsive"
+          src={image.src}
+          alt={image.alt}
+          width="100%"
+          height="100%"
+        />
+      </StyledImageContainer>
       <TextContainer>
-        <CardTitleText>Title</CardTitleText>
-        <CardBodyText>Lorem ipsum dolor sit amet</CardBodyText>
+        <CardTitleText>{title}</CardTitleText>
+        <CardBodyText>{body}</CardBodyText>
       </TextContainer>
     </CardContainer>
   );
