@@ -22,6 +22,7 @@ export const CardContainer = styled.div`
     cursor: pointer;
     height: auto;
   }
+
   @media (max-width: 1024px) {
     max-width: 90vw;
     height: auto;
@@ -40,7 +41,8 @@ export const CardTitleText = styled.p`
   font-size: 1rem;
   margin: 0;
   padding-bottom: 0.2rem;
-  &.hovered {
+
+  ${CardContainer}:hover & {
     color: #67a5f7;
     text-decoration: underline;
   }
@@ -52,9 +54,7 @@ export const CardBodyText = styled.p`
   margin: 0;
 `;
 
-export const StyledImageContainer = styled(({ ...props }) => (
-  <div {...props} />
-))`
+export const StyledImageContainer = styled.div`
   max-width: 3rem;
   max-height: 3rem;
   width: 100%;

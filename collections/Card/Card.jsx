@@ -9,20 +9,13 @@ import {
 } from "./elements";
 
 export const Card = ({ image, title, body, width, backgroundColor }) => {
-  const [isHovered, setIsHovered] = useState(false);
   return (
-    <CardContainer
-      style={{ backgroundColor: backgroundColor, width: width }}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    >
+    <CardContainer style={{ backgroundColor: backgroundColor, width: width }}>
       <StyledImageContainer>
         <Image src={image.src} alt={image.alt} width={48} height={48} />
       </StyledImageContainer>
       <TextContainer>
-        <CardTitleText className={isHovered ? "hovered" : ""}>
-          {title}
-        </CardTitleText>
+        <CardTitleText>{title}</CardTitleText>
         <CardBodyText dangerouslySetInnerHTML={{ __html: body }} />
       </TextContainer>
     </CardContainer>
