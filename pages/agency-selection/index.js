@@ -1,4 +1,4 @@
-import { AgencySelectionSection } from "../../sections/agencySelection/agencySelection";
+import { AgencySelectionSection } from "../../sections/AgencySelection/AgencySelection";
 
 const agencySelectionProps = {
   title: "Managed agency selection",
