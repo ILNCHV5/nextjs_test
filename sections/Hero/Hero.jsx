@@ -25,7 +25,7 @@ export const Hero = ({ image, title, description, ctaText, ...props }) => {
       </StyledTextContainer>
       <StyledImageContainer>
         <Image
-          layout="responsive"
+          fill
           src={image.src}
           alt={image.alt}
           width={image.width}

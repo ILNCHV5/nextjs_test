@@ -56,8 +56,8 @@ export const ContentsContainer = styled.div`
 
 export const CardsContainer = styled.div`
   display: flex;
+  align-items: flex-start;
   flex-direction: column;
-  height: auto;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   row-gap: 2rem;

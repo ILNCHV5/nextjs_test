@@ -4,13 +4,12 @@ import Image from "next/image";
 export const CardContainer = styled.div`
   border-radius: 8px;
   overflow: hidden;
-  background-color: #f4f4f4;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  width: 23rem;
-  max-height: 7rem;
+  max-width: 23rem;
+  max-height: 5rem;
   padding: 1.5rem;
   border: 3px solid transparent;
   transition: border-color 0.3s;

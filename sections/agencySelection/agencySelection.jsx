@@ -20,7 +20,6 @@ export const AgencySelectionSection = ({ title, subTitle, video, cards }) => {
       <ContentsContainer>
         <VideoContainer>
           <Image
-            layout="responsive"
             src={video.src}
             alt={video.alt}
             width={video.width}
@@ -31,9 +30,11 @@ export const AgencySelectionSection = ({ title, subTitle, video, cards }) => {
           {cards.map((card) => (
             <Card
               key={card.id}
+              width={card.width}
               image={card.image}
               title={card.title}
               body={card.body}
+              backgroundColor={card.backgroundColor}
             />
           ))}
         </CardsContainer>

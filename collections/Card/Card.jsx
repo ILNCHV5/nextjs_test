@@ -7,17 +7,11 @@ import {
   StyledImageContainer,
 } from "./elements";
 
-export const Card = ({ image, title, body }) => {
+export const Card = ({ image, title, body, width, backgroundColor }) => {
   return (
-    <CardContainer>
+    <CardContainer style={{ backgroundColor: backgroundColor, width: width }}>
       <StyledImageContainer>
-        <Image
-          layout="responsive"
-          src={image.src}
-          alt={image.alt}
-          width={48}
-          height={48}
-        />
+        <Image src={image.src} alt={image.alt} width={48} height={48} />
       </StyledImageContainer>
       <TextContainer>
         <CardTitleText>{title}</CardTitleText>
