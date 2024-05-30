@@ -15,7 +15,7 @@ export const Card = ({ image, title, body, width, backgroundColor }) => {
       </StyledImageContainer>
       <TextContainer>
         <CardTitleText>{title}</CardTitleText>
-        <CardBodyText>{body}</CardBodyText>
+        <CardBodyText dangerouslySetInnerHTML={{ __html: body }} />
       </TextContainer>
     </CardContainer>
   );
