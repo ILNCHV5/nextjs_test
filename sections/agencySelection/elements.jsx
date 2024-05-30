@@ -7,7 +7,7 @@ export const SectionContainer = styled.div`
   justify-content: center;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  width: 100vw;
+  width: 100%;
   background-image: url("/background.png");
   background-size: 80%;
   background-position: center;
@@ -61,6 +61,13 @@ export const CardsContainer = styled.div`
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   row-gap: 2rem;
+  width: 27rem;
+
+  @media (max-width: 1024px) {
+    max-width: 30rem;
+    width: 90%;
+    height: auto;
+  }
 `;
 
 export const VideoContainer = styled.div`

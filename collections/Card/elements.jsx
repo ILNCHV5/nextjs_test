@@ -2,20 +2,29 @@ import styled from "styled-components";
 import Image from "next/image";
 
 export const CardContainer = styled.div`
+  box-sizing: border-box;
   border-radius: 8px;
-  overflow: hidden;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  max-width: 23rem;
-  max-height: 5rem;
+  max-height: 8rem;
   padding: 1.5rem;
   border: 3px solid transparent;
   transition: border-color 0.3s;
+  overflow: auto;
+  overflow-wrap: break-word;
+  height: auto;
+  max-height: 100%;
+
   &:hover {
     border-color: #67a5f7;
     cursor: pointer;
+    height: auto;
+  }
+  @media (max-width: 1024px) {
+    max-width: 90vw;
+    height: auto;
   }
 `;
 
