@@ -39,6 +39,11 @@ export const CardTitleText = styled.p`
   font-weight: bold;
   font-size: 1rem;
   margin: 0;
+  padding-bottom: 0.2rem;
+  &.hovered {
+    color: #67a5f7;
+    text-decoration: underline;
+  }
 `;
 
 export const CardBodyText = styled.p`
